@@ -337,9 +337,9 @@ img {
     margin-bottom: auto;
 }
 
-.mobile-menu-list {}
+.mobile-menu-item {}
 
-.mobile-menu-item {
+.mobile-menu-adrs {
     margin-bottom: 40px;
 }
 
@@ -361,12 +361,10 @@ img {
     color: #404bbf;
 }
 
-.mobile-menu-adrs-list {
-    margin-bottom: 48px;
-}
+.mobile-menu-adrs-list {}
 
-.mobile-menu-adrs-item {
-    margin-bottom: 24px;
+.mobile-menu-adrs-item:nth-last-child(2) {
+    padding-bottom: 24px;
 }
 
 .mobile-menu-adrs-link {
@@ -466,7 +464,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
-    padding: 10px;
 }
 
 .hero-butt {
@@ -888,7 +885,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: inline-block;
     margin-bottom: 16px;
     justify-content: center;
     display: flex;
@@ -973,6 +969,7 @@ img {
 .sub-form {
     display: flex;
     flex-direction: column;
+
     /* gap: 24px; */
 }
 
@@ -1002,6 +999,7 @@ img {
     line-height: 2;
     letter-spacing: 0.04em;
     margin-bottom: 16px;
+
 }
 
 .sub-input::placeholder {
@@ -1030,7 +1028,7 @@ img {
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+
     cursor: pointer;
     border: none;
     margin: 0 auto;
@@ -1053,20 +1051,30 @@ img {
         display: flex;
         align-items: baseline;
         justify-content: left;
-        row-gap: 72px;
-        column-gap: 24px;
+
     }
 
     .left-footer {
-        margin-bottom: 0;
+
+        margin-right: 24px;
     }
 
+    .footer-logo {
+        justify-content: left;
+    }
 
+    .footer-link-title {
+        text-align: left;
+    }
 
     .sub-form {
         display: flex;
         flex-direction: row;
-        gap: 24px;
+    }
+
+    .sub-input {
+        margin-right: 24px;
+        margin-bottom: 0;
     }
 
     .sub-btn {
@@ -1080,6 +1088,8 @@ img {
     .footer-text {
         max-width: 264px;
     }
+
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -1087,12 +1097,13 @@ img {
         max-width: 1158px;
         display: flex;
         align-items: baseline;
-        row-gap: 0px;
-        column-gap: 0px;
+        flex-wrap: nowrap;
+
     }
 
     .left-footer {
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .sub-form {
@@ -1102,19 +1113,17 @@ img {
 
     .footer-link-blok {
         margin-right: 80px;
-    }
-
-    .sub-btn {
-        padding-top: 8px;
-        padding-left: 24px;
-        padding-bottom: 8px;
-        min-width: 165px;
+        margin-bottom: 0;
     }
 
     .footer-text {
         max-width: 264px;
     }
 
+    .sub-input {
+        margin-right: 0;
+
+    }
 }
 
 
