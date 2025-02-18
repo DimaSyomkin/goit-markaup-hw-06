@@ -334,13 +334,19 @@ img {
 }
 
 .mobile-menu-nav {
+
     margin-bottom: auto;
+
 }
 
-.mobile-menu-item {}
+.mobile-menu-list {}
+
+.mobile-menu-item {
+    margin-bottom: 40px;
+}
 
 .mobile-menu-adrs {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
 
 .mobile-menu-link {
@@ -350,6 +356,7 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .mobile-menu-link:hover,
@@ -364,7 +371,7 @@ img {
 .mobile-menu-adrs-list {}
 
 .mobile-menu-adrs-item:nth-last-child(2) {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .mobile-menu-adrs-link {
@@ -464,6 +471,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
+    max-width: 216px;
 }
 
 .hero-butt {
@@ -874,6 +882,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 72px;
 
 }
 
@@ -911,13 +920,9 @@ img {
     max-width: 288px;
 }
 
-.left-footer {
-    margin-bottom: 72px;
-}
+.left-footer {}
 
-.footer-link-blok {
-    margin-bottom: 72px;
-}
+.footer-link-blok {}
 
 .footer-link-title {
     font-weight: 500;
@@ -969,8 +974,7 @@ img {
 .sub-form {
     display: flex;
     flex-direction: column;
-
-    /* gap: 24px; */
+    gap: 16px;
 }
 
 .sub-title {
@@ -983,6 +987,8 @@ img {
     margin-bottom: 16px;
     text-align: center;
 }
+
+.sub-label {}
 
 .sub-input {
     border: 1px solid #fff;
@@ -998,7 +1004,7 @@ img {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    margin-bottom: 16px;
+
 
 }
 
@@ -1051,13 +1057,11 @@ img {
         display: flex;
         align-items: baseline;
         justify-content: left;
+        gap: 72px 24px;
 
     }
 
-    .left-footer {
-
-        margin-right: 24px;
-    }
+    .left-footer {}
 
     .footer-logo {
         justify-content: left;
@@ -1070,10 +1074,11 @@ img {
     .sub-form {
         display: flex;
         flex-direction: row;
+        gap: 24px;
+
     }
 
     .sub-input {
-        margin-right: 24px;
         margin-bottom: 0;
     }
 
@@ -1089,7 +1094,6 @@ img {
         max-width: 264px;
     }
 
-
 }
 
 @media screen and (min-width: 1158px) {
@@ -1098,6 +1102,7 @@ img {
         display: flex;
         align-items: baseline;
         flex-wrap: nowrap;
+        gap: 0;
 
     }
 
